@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="webpagestyle.css">
+    <title>The OSI Layer Model</title>
+    <script src="quiz.js"></script>
+</head>
+
+<body>
+    <h1>The OSI Model</h1>
+    <nav>
+        <ul>
+           <li><a href="index.html">The OSI Model</a></li> 
+            <li><a href="layer1.html">Physical Layer</a></li>
+            <li><a href="layer2.html">Data Link Layer </a></li>
+            <li><a href="layer3.html">Network Layer</a></li>
+            <li><a href="layer4.html">Transport Layer</a></li>
+            <li><a href="layer5.html">Session Layer</a></li>
+            <li><a href="layer6.html">Presentation Layer</a></li>
+            <li><a href="layer7.html">Application Layer</a></li>
+        </ul>
+    </nav>
+    <h2>What is the OSI Model?</h2>
+    <p>The OSI Model is short for the Open Systems Interconnection Model, first introduced in 1983 by the International Organization 
+        for Standardization. It explains how computers interact and communicate with each other on a network through seven layers. 
+        The OSI Model is important because it helps locate, identify, and troubleshoot any problem that may appear on the internet 
+        by narrowing down the issue to a specific layer. The seven layers are: Physical, Data Link, Network, Transport, Session, 
+        Presentation, and Application. Each layer builds upon the other, meaning that when data is sent, it travels from the top of the 
+        layers to the bottom, while when data is being received, it travels from the bottom to the top of the layers. </p>
+    <p>You may find more information on the OSI Model <a href="https://en.wikipedia.org/wiki/OSI_model">here</a></p>
+
+    <h3>Quiz</h3>
+    <form id="quiz" name="quiz">
+        <p>How many layers are in the OSI Layer Model?</p>
+        <input id="mc" type="radio" name="question1" value="5">5<br>
+        <input id="mc" type="radio" name="question1" value="7">7<br>
+        <p>Which is NOT a function for the Physical Layer?</p>
+        <input id="mc" type="radio" name="question2" value="Transmission of raw data">Transmission of raw data<br>
+        <input id="mc" type="radio" name="question2" value="Ecrypting and compressing data">Ecrypting and compressing
+        data<br>
+        <p>Which is NOT a sublayer of the Data Link Layer?</p>
+        <input id="mc" type="radio" name="question3" value="The Physical Link Control Layer">The Physical Link Control
+        Layer<br>
+        <input id="mc" type="radio" name="question3" value="Media Access Control Layer">Media Access Control Layer<br>
+        <p>Which layer is the closest layer to the user?</p>
+        <input id="mc" type="radio" name="question4" value="The Presentation Layer">The Presentation Layer<br>
+        <input id="mc" type="radio" name="question4" value="The Application Layer">The Application Layer<br>
+        <p>Yes or No: The application layer is the same as the software application?</p>
+        <input id="mc" type="radio" name="question5" value="Yes">Yes<br>
+        <input id="mc" type="radio" name="question5" value="No">No<br>
+        <input id="button" type="button" value="Done" onclick="check();">
+    </form>
+    <div id="after_submit">
+        <p id="number_correct">Done</p>
+    </div>
+
+
+
+
+
+    <footer>
+        Copyright &copy; Makayla Wray -<br>
+        <a href="mailto:mwray1@my.westga.edu">mwray1@my.westga.edu</a>
+    </footer>
+</body>
+
+</html>
